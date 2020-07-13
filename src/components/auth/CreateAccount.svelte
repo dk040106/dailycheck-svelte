@@ -41,6 +41,7 @@
     // add new post
     if (valid) {
       createUser(fields.email, fields.password);
+      alert("이메일 인증을 해주세요.");
       dispatch("onCreateUser");
     } else {
       console.log(errors);
