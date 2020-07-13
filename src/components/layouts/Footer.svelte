@@ -1,6 +1,6 @@
 <style>
   footer {
-    padding: 40px;
+    padding: 32px;
     text-align: center;
   }
   .copyright {

@@ -8,14 +8,8 @@
     margin: 0;
     text-align: center;
   }
-
-  img {
-    max-width: 360px;
-  }
 </style>
 
 <header>
-  <h1>
-    <img src="gnu.png" alt="THE logo" />
-  </h1>
+  <h1>시나브로 - 습관 관리 앱</h1>
 </header>

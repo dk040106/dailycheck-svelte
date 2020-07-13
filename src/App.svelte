@@ -1,6 +1,6 @@
 <script>
   import { auth } from "./services/firebase";
-  import { isEmailVerified } from "./services/auth";
+  import { isEmailVerified, signOut } from "./services/auth";
   import { userStore } from "./stores/data";
 
   import Header from "./components/layouts/Header.svelte";
@@ -23,6 +23,10 @@
   ];
 
   let selected = options[0];
+
+  if ($userStore.email === undefined) {
+    signOut();
+  }
 </script>
 
 <style>

@@ -4,12 +4,12 @@
   import CreateAccount from "./CreateAccount.svelte";
 
   // tabs
-  let items = ["Sign In", "Create Account"];
-  let activeItem = "Sign In";
+  let items = ["로그인", "계정 만들기"];
+  let activeItem = "로그인";
   const tabChangeHandler = event => (activeItem = event.detail);
 
   const toLoginPage = () => {
-    activeItem = "Sign In";
+    activeItem = "로그인";
   };
 </script>
 
@@ -22,9 +22,9 @@
 
 <div class="main">
   <Tabs {items} {activeItem} on:tabChange={tabChangeHandler} />
-  {#if activeItem === 'Sign In'}
+  {#if activeItem === '로그인'}
     <SignIn />
-  {:else if activeItem === 'Create Account'}
+  {:else if activeItem === '계정 만들기'}
     <CreateAccount on:onCreateUser={toLoginPage} />
   {/if}
 </div>
