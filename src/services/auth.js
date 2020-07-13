@@ -40,7 +40,6 @@ export const createUser = async (email, password) => {
     .doc(res.user.uid.toString())
     .set({
       todo: ['First Todo', 'Second Todo', 'Third Todo'],
-      check: [],
     })
     .catch((error) => {
       console.log(error);
