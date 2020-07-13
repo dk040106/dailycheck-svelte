@@ -65,14 +65,14 @@
 
 <form on:submit|preventDefault={submitHandler}>
   <div class="form-field">
-    <label for="email">E-Mail</label>
+    <label for="email">이메일</label>
     <input type="email" id="email" bind:value={fields.email} />
     <div class="error">{errors.email}</div>
   </div>
   <div class="form-field">
-    <label for="password">Password</label>
+    <label for="password">비밀번호</label>
     <input type="password" id="password" bind:value={fields.password} />
     <div class="error">{errors.password}</div>
   </div>
-  <Button type="secondary">Sign In</Button>
+  <Button type="secondary">로그인</Button>
 </form>

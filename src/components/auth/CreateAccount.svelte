@@ -17,7 +17,7 @@
     // validate email
     if (!validateEmail(fields.email)) {
       valid = false;
-      errors.email = "email format is not right";
+      errors.email = "이메일 형식이 맞지 않습니다.";
     } else {
       errors.email = "";
     }
@@ -25,7 +25,7 @@
     // validate password
     if (fields.password.trim().length < 1) {
       valid = false;
-      errors.password = "password cannot be empty";
+      errors.password = "비밀번호는 없을 수 없습니다.";
     } else {
       errors.password = "";
     }
@@ -33,7 +33,7 @@
     // validate passwordVal
     if (fields.passwordVal.trim() != fields.password.trim()) {
       valid = false;
-      errors.passwordVal = "mismatch with password";
+      errors.passwordVal = "비밀번호와 맞지 않습니다.";
     } else {
       errors.passwordVal = "";
     }
@@ -74,19 +74,19 @@
 
 <form on:submit|preventDefault={submitHandler}>
   <div class="form-field">
-    <label for="email">E-Mail</label>
+    <label for="email">이메일</label>
     <input type="email" id="email" bind:value={fields.email} />
     <div class="error">{errors.email}</div>
   </div>
   <div class="form-field">
-    <label for="password">Password</label>
+    <label for="password">비밀번호</label>
     <input type="password" id="password" bind:value={fields.password} />
     <div class="error">{errors.password}</div>
   </div>
   <div class="form-field">
-    <label for="passwordVal">Password Check</label>
+    <label for="passwordVal">비밀번호 확인</label>
     <input type="password" id="passwordVal" bind:value={fields.passwordVal} />
     <div class="error">{errors.passwordVal}</div>
   </div>
-  <Button type="secondary">Create Account</Button>
+  <Button type="secondary">계정 만들기</Button>
 </form>

@@ -4,6 +4,10 @@
 
   import Card from "../shared/Card.svelte";
   import Button from "../shared/Button.svelte";
+
+  if ($userStore.email === undefined) {
+    signOut();
+  }
 </script>
 
 <style>
@@ -15,5 +19,5 @@
 <Card>
   <h2>안녕하세요!</h2>
   <p>{$userStore.email}으로 로그인 하였습니다.</p>
-  <Button on:click={() => signOut()}>Sign Out</Button>
+  <Button on:click={() => signOut()}>로그아웃</Button>
 </Card>

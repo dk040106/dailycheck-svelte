@@ -13,5 +13,5 @@
 </style>
 
 <footer>
-  <div class="copyright">Copyright 2020 dk040106</div>
+  <div class="copyright">Copyright 2020 김정웅, 노건호, 최민웅</div>
 </footer>

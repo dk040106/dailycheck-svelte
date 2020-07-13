@@ -32,27 +32,3 @@ export const setCheck = async (checkData) => {
       alert(error.message);
     });
 };
-
-export const getTodo = async () => {
-  await db
-    .collection('users')
-    .doc(res.user.uid.toString())
-    .get()
-    .then((data) => console.log(data))
-    .catch((error) => {
-      console.log(error);
-      alert(error.message);
-    });
-};
-
-export const setTodo = async () => {
-  await db
-    .collection('users')
-    .doc(res.user.uid.toString())
-    .get()
-    .then((data) => console.log(data))
-    .catch((error) => {
-      console.log(error);
-      alert(error.message);
-    });
-};

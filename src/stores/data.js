@@ -3,8 +3,8 @@ import { writable } from 'svelte/store';
 export const userStore = writable({});
 
 export const habitStore = writable([
-  { title: '물 마시기', checked: true },
-  { title: '양치 하기', checked: true },
+  { title: '물 마시기', checked: false },
+  { title: '양치 하기', checked: false },
   { title: '일기 쓰기', checked: false },
 ]);
 

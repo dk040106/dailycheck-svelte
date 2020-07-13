@@ -9,18 +9,20 @@
     getCheck().then(habits => habitStore.set(habits));
   };
 
-  onMount(() => {
+  const getHabitData = () => {
     getCheckData();
-  });
+  };
+
+  onMount(() => {});
 
   const onSubmit = () => {
     setCheck($habitStore);
     getCheckData();
-    alert("저장 되었습니다");
+    alert("기록 되었습니다");
   };
 </script>
 
 {#each $habitStore as habit}
   <CheckForm {habit} />
 {/each}
-<Button on:click={onSubmit}>Submit</Button>
+<Button on:click={onSubmit}>기록하기</Button>

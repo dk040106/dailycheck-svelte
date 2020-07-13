@@ -16,6 +16,6 @@
 
 <header>
   <h1>
-    <img src="favicon.png" alt="THE logo" />
+    <img src="gnu.png" alt="THE logo" />
   </h1>
 </header>
