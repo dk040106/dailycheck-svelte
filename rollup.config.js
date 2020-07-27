@@ -52,10 +52,8 @@ export default {
 
     replace({
       // stringify the object
-      __dailycheck: JSON.stringify({
-        firebaseConfig: {
-          ...config().parsed, // attached the .env config
-        },
+      firebaseConfig: JSON.stringify({
+        ...config().parsed, // attached the .env config
       }),
     }),
   ],
